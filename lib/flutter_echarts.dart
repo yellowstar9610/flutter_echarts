@@ -70,7 +70,7 @@ class _EchartsState extends State<Echarts> {
     _currentOption = widget.option;
 
     if (widget.reloadAfterInit) {
-      new Future.delayed(const Duration(milliseconds: 100), () {
+      new Future.delayed(const Duration(milliseconds: 500), () {
         _controller?.reload();
       });
     }
